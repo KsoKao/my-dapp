@@ -11,11 +11,17 @@ function App() {
           </div> */}
           <ul className="flex gap-2 md:gap-8 text-xs md:text-base">
             <li className="bg-indigo-400 px-2 py-1 btn-style">Introduce</li>
-            <li className="bg-indigo-400 px-2 py-1 btn-style">Portfolio</li>
-            <li className="bg-indigo-500 px-2 py-1 btn-style">Contact Me</li>
+            <li className="bg-pink-400 px-2 py-1 btn-style">Portfolio</li>
+            <li className="bg-blue-500 px-2 py-1 btn-style">Contact Me</li>
           </ul>
         </div>
       </header>
+      <main>
+        {/* Introdice */}
+        <div className="bg-purple-100 max-w-screen-xl ma-auto h-96 flex justify-center items-center">
+          여기에 나를 소개하는 내용을 적으면 됩니다.
+        </div>
+      </main>
     </div>
   );
 }
