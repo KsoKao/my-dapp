@@ -4,6 +4,6 @@
 
 @layer components {
   .btn-style {
-    @apply px-2 py-1 rounded-md text-blue-200 cursor-pointer;
+    @apply px-2 py-1 rounded-full text-blue-200 cursor-pointer;
   }
 }
