@@ -1,26 +1,22 @@
-import Header from "./component/Header";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Introdice from "./component/Introdice";
-
-import Portfolio from "./component/Portfolio";
-
-import Contactme from "./component/Contactme";
-
-import Footer from "./component/Footer";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Main from "./pages/main";
+import Portfolio from "./pages/portfolio";
 
 function App() {
-  //바깥족 주석처리
   return (
-    <div className="bg-purple-200 min-h-screen">
-      {/*안쪽은 이렇게 주석처리*/}
-      <Header />
-      <main>
-        <Introdice />
-        <Portfolio />
-        <Contactme />
-      </main>
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <div className="bg-red-100 min-h-screen flex flex-col">
+        <Header />
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/portfolio/:projectId" element={<Portfolio />} />
+        </Routes>
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
 
